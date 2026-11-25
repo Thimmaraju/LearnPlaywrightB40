@@ -28,7 +28,7 @@ test('Login with Valid username and invalid password', async ({ page }) => {
 
   await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login');
 
-  // Enter username
+
   await page.getByRole('textbox', { name: 'Username' }).fill(logindata.Username);
 
   // Enter invalid password
