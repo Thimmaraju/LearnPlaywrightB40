@@ -17,7 +17,7 @@ test('Verify add employee with basic details', async ({ page }) => {
 
   await page.getByRole('link', { name: 'PIM' }).click();
 
-  await page.getByRole('link', { name: 'Add Employee' }).click();
+  await page.getByRole('link',  { name: 'Add Employee' }).click();
 
   await page.getByRole('textbox', { name: 'First Name' }).click();
   await page.getByRole('textbox', { name: 'First Name' }).fill(faker.person.firstName());
